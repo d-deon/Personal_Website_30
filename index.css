@@ -1,0 +1,104 @@
+/* .home-main-section { //this works for settling stuff in the middle just in case
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    flex-grow: 1;
+} */ 
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+.home-main-section .img-wrapper{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.home-main-section .lady-image {
+    background-image: url(images/guitar.lady.elbow.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.home-main-section .call-to-action{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem; 
+    align-self: center;
+}
+
+@media (max-width:900px) {
+    .home-main-section .img-wrapper{
+        display: none;
+    }
+    .home-main-section{
+        justify-content: center;
+    }
+}
+.home-page-circle-1{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(99, 35, 5, 0.345);
+    z-index: -1;
+    opacity: 0.45;
+    top: 3vh;
+    left:30vh;
+   
+}
+
+.home-page-circle-2{
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    background-color: rgba(99, 35, 5, 0.345);
+    z-index: -1;
+    opacity: 0.45;
+    bottom: 15%;
+    right:10%;
+   
+}
+
+.home-page-circle-3{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(99, 35, 5, 0.345);
+    z-index: -1;
+    opacity: 0.45;
+    bottom: 15%;
+    right:10%;
+   
+}
+.home-page-circle-4 {
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .home-page-circle-4::before {
+    content: '';
+    transform: translate(-40%, 60%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(117, 71, 15, 0.3);
+  }
